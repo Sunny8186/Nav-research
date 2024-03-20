@@ -24,7 +24,12 @@
     <h1>Navigation Design</h1>
     <div class="row ">
         <div class="col">
-            <button>Why is this Important?</button>
+           
+            <button onclick="displayText()">Why is Navigation Important?</button>
+
+            <div id="textField" style="display: none;">
+                Navigation design is important because it allows the user to easily explore your page without getting lost in the content. It is a very big part of user accessibility and not only does it make your website function better but it also make it look so much nicer.
+            </div>
         </div>
 
     <div class="col define align-items-center">
@@ -44,4 +49,11 @@
 
      
 </body>
+
+<script> function displayText() {
+    var text = document.getElementById("textField");
+    text.style.display = "block";
+  }
+
+  </script>
 </html>
