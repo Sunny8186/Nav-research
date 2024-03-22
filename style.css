@@ -158,13 +158,13 @@ button {
 }
 
 .topnav {
-  background-color: #acc1cc;
+  background-color: #28314d;
   overflow: hidden;
 }
 
 .topnav a {
   float: right;
-  color: #28314d;
+  color: #acc1cc;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -195,4 +195,17 @@ button {
   background-color: #C9DFE5;
   padding: 1% 2%;
   margin-left: 10%;
+}
+
+img {
+  width: 70%;
+  height: 40%;
+  padding: 10%;
+}
+
+ul {
+  background-color: #c5714e;
+  padding:2%;
+  margin:10%;
+
 }
