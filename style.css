@@ -7,7 +7,7 @@ body {
   height: 100vh;
   background: linear-gradient(
     to top,
-    #AFB8BD 30%,
+    #acc1cc 30%,
     #C9DFE5 0%,
     #C9DFE5 50%,
     #C9DFE5 100%
@@ -21,8 +21,8 @@ body {
     to right,
     #C9DFE5 0%,
     #C9DFE5 50%,
-    #AFB8BD 50%,
-    #AFB8BD 100%
+    #acc1cc 50%,
+    #acc1cc 100%
   );
 }
 
@@ -33,8 +33,8 @@ body {
     to right,
     #AFB8BD 0%,
     #AFB8BD 50%,
-    #C9DFE5 50%,
-    #C9DFE5 100%
+    #acc1cc 50%,
+    #acc1cc 100%
   );
 }
 
@@ -48,21 +48,29 @@ h1 {
   font-variation-settings:
     "wdth" 100;
     color: #FFFFFF;
-    -webkit-text-stroke: 2px #c7501d;
+    -webkit-text-stroke: 2px #c75d30;
     padding-left: 15%;
-    padding-top: 15%;
-    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
     text-align:;
 }
 
-h3 {
-  color: #c7501d;
+.info {
+  margin-left: 40%;
+  box-shadow: 3px 5px #af542c
 }
 
+h3 {
+  color: #c46841;
+}
+
+hr {
+  color: #e07f55;
+}
 
 .navbar {
   background-color: #C9DFE5;
-  border: 5px solid #2f427c;
+  border: 5px solid #28314d;
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -78,12 +86,12 @@ h3 {
   text-decoration: none;
   font-size: 150%;
   background-color: #727A94;
-  border: 4px solid #2f427c;
+  border: 4px solid #28314d;
   border-radius: 25px;
 }
 
 .navbar a:hover {
-  background-color: #2f427c;
+  background-color: #28314d;
   color: #f2f2f2;
 }
 
@@ -94,7 +102,7 @@ h3 {
 }
 
 .skeu {
-  border: 2px solid #3b3f4d;
+  border: 2px solid #28314d;
   border-radius: 5px;
   color: #F8F8F8;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;
@@ -106,18 +114,18 @@ h3 {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
   background: #727A94;
   background: linear-gradient(#01258D, #041c64);
-  border-color: #2f427c;
+  border-color: #28314d;
 }
 
 #flat {
   background-color: #727A94;
   color: #fff;
-  border: 2px solid #2f427c;
+  border: 2px solid #28314d;
   border-radius: 10px;
 }
 
 #flat:hover {
-  background-color: #2f427c;
+  background-color: #28314d;
   transition: background-color .15s, font-size .15s;
   font-size: 30px;
 }
@@ -131,17 +139,60 @@ button {
   border-radius: 25px;
   margin-left: 20%;
   color: #FFFFFF;
-  background-color: #e2622c;
-  border: solid #c7501d
+  background-color: #dd7346;
+  border: solid #c56339
 }
 
 .define {
   display: block;
-  color: #f2f2f2;
+  color: #28314d;
   padding: 1% 2%;
   text-decoration: none;
-  font-size: 110%;
-  background-color: #AFB8BD;
-  border: 4px solid #AFB8BD;
+  font-size: 130%;
+  background-color: #d8e3e9;
+  border: 4px solid #acc1cc;
   border-radius: 25px;
+  margin-right: 10%;
+  box-shadow: 5px 5px #C9DFE5;
+  font-family: var (--main-font);
+}
+
+.topnav {
+  background-color: #acc1cc;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #28314d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 5%;
+
+}
+
+.topnav a:hover {
+  background-color: #C9DFE5;
+  color: black;
+  border-radius: 5px;
+}
+
+.example {
+  color: #ffff;
+  padding: 2%;
+  -webkit-text-stroke: px #c56137;
+
+}
+
+#myDIV {
+  color: #28314d;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 25px;
+  border: 2px solid #db6b3b;
+  background-color: #C9DFE5;
+  padding: 1% 2%;
+  margin-left: 10%;
 }
