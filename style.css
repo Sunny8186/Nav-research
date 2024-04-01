@@ -43,7 +43,7 @@ h1 {
     font-family: var (--main-font);
   font-optical-sizing: auto;
   font-weight: 900;
-  font-size: 250%;
+  font-size: 300%;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -203,8 +203,8 @@ img {
 
 ul {
   background-color: #c5714e;
-  padding:2%;
-  margin:10%;
+  padding:3%;
+  margin:1%;
 
 }
 
