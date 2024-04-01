@@ -198,9 +198,7 @@ button {
 }
 
 img {
-  width: 70%;
-  height: 40%;
-  padding: 10%;
+  padding-left: 10%;
 }
 
 ul {
@@ -208,4 +206,9 @@ ul {
   padding:2%;
   margin:10%;
 
+}
+
+.examples {
+  margin-left: 40%;
+  font-size:xx-large;
 }
