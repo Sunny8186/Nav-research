@@ -7,11 +7,15 @@ body {
   height: 100vh;
   background: linear-gradient(
     to top,
-    #acc1cc 30%,
+    #acc1cc 20%,
     #C9DFE5 0%,
-    #C9DFE5 50%,
-    #C9DFE5 100%
+    #acc1cc 50%,
+    #acc1cc 100%
   );
+}
+
+.signUp{
+  background-color: #acc1cc;
 }
 
 .good {

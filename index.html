@@ -56,8 +56,46 @@
         <a id ="flat" href="#contact">Flat Button</a>
       </div>
 
-     
-</body>
+      <hr>
+
+      <div class="signUp">
+      <div class="container">
+        <h2>Sign up for more info</h2>
+
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" class="form-control" placeholder="Enter your age" required min="1">
+            </div>
+
+            <br>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div id="userData" class="user-data" style="display: none;">
+            <h3>Welcome, <span id="userName"></span>!</h3>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+            <p><strong>Age:</strong> <span id="userAge"></span></p>
+        </div>
+
+        <br>
+        
+        <br>
+
+        <hr>
+    </div>
+    </div>
 
 <script> 
 
@@ -70,6 +108,52 @@ function myFunction() {
   }
 }
 
-  </script>
+  </script> 
+  
+  <script>
+    document.getElementById('userForm').addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const age = document.getElementById('age').value;
+        
+        if (!name || !email || !age || !message) {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        localStorage.setItem('userName', name);
+        localStorage.setItem('userEmail', email);
+        localStorage.setItem('userAge', age);
+        
+
+        displayUserData();
+    });
+
+    function displayUserData() {
+        const userName = localStorage.getItem('userName');
+        const userEmail = localStorage.getItem('userEmail');
+        const userAge = localStorage.getItem('userAge');
+        const userMessage = localStorage.getItem('userMessage');
+
+        if (userName && userEmail && userAge && userMessage) {
+            document.getElementById('userName').textContent = userName;
+            document.getElementById('userEmail').textContent = userEmail;
+            document.getElementById('userAge').textContent = userAge;
+           
+
+            document.getElementById('userData').style.display = 'block';
+
+            document.getElementById('userForm').style.display = 'none';
+        }
+    }
+
+    window.onload = function () {
+        displayUserData();
+    };
+</script>
+</body>
+
 </html>
 
